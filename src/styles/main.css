@@ -1,23 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
 
-main {
-	max-width: 1627px;
-	width: 100%;
-	margin: 0 auto;
+:root {
+  font-size: 62.5%;
 }
 
-p, h1 {
-	font-family: "Sen", Helvetica, monospace;
-	color: #FFFFFF;
-	font-size: 0.8rem;
+/* @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  :root {
+    font-size: 125%;
+  }
+} */
+
+main {
+  max-width: 1627px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+a,
+button,
+input::placeholder {
+  font-family: "Sen", Helvetica, monospace;
+  color: #ffffff;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 
 .text-input {
   font-family: "Sen", Helvetica, monospace;
-  height: 38px;
+  height: 3.8rem;
   border: none;
-  border-radius: 1000px;
-  padding: 0 12px;
+  border-radius: 100rem;
+  padding: 0 1.2rem;
 }
 
 .text-input::placeholder {
@@ -27,9 +43,9 @@ p, h1 {
 button {
   font-family: "Sen", Helvetica, monospace;
   border: none;
-  height: 38px;
-  padding: 0 30px;
-  border-radius: 1000px;
-  background-color: #38A5DB;
+  height: 3.8rem;
+  padding: 0 3rem;
+  border-radius: 100rem;
+  background-color: #38a5db;
   color: white;
 }

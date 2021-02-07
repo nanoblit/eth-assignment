@@ -1,7 +1,7 @@
 .top {
-  height: 1000px;
+  height: 100rem;
   background-image: url("../assets/background.png");
-  background-position: calc(50% - 80px) calc(50% - 35px);
+  background-position: calc(50% - 8rem) calc(50% - 3.5rem);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -13,21 +13,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 15rem;
 }
 
 .call-to-action-left {
-  width: 430px;
-  margin-top: 300px;
-  margin-right: 20px;
+  width: 43rem;
+  margin-top: 20rem;
+  margin-right: 2rem;
 }
 
-.text__main {
-  font-size: 2rem;
+.text-main {
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 56px;
-  letter-spacing: 0.2px;
-  margin-bottom: 50px;
+  line-height: 5.6rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 5rem;
 }
 
 .subscribe-text {
@@ -35,7 +35,7 @@
 }
 
 .subscription {
-  margin-top: 20px;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -48,13 +48,70 @@
   right: 0;
 }
 
-.video {
-  position: relative;
-  margin-top: 200px;
+.arrow--small-screen {
+  display: none;
 }
 
-.play-button {
-  position: absolute;
-  left: calc(50% - 75px);
-  top: calc(50% - 90px);
+.video {
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 1070px) { 
+  .top {
+    background-position: calc(50% - 8rem) calc(50% - 13rem);
+  }
+
+  .call-to-action {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .call-to-action-left {
+    margin: 15rem 0 17rem 0;
+    width: 100%;
+  }
+
+  .text-main {
+    margin-bottom: 7rem;
+  }
+
+  .arrow--small-screen {
+    display: block;
+  }
+
+  .video {
+    width: 80%;
+  }
+
+  .arrow--large-screen {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) { 
+  .call-to-action {
+    width: 90%;
+  }
+
+  .call-to-action-left {
+    margin: 10rem 0 6rem 0;
+  }
+  
+  .subscription {
+    position: static;
+  }
+  
+  .text-input--subscription {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .button--subscribe {
+    position: static;
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+  }
 }

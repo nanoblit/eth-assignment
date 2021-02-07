@@ -1,0 +1,21 @@
+.social {
+  position: fixed;
+  bottom: 2rem;
+  right: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  margin-bottom: 1rem;
+}
+
+.social-link:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1070px) { 
+  .social {
+    right: 2rem;
+  }
+}
