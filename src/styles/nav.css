@@ -10,9 +10,10 @@ nav {
   justify-content: space-between;
   padding-left: 15rem;
   padding-right: 13rem;
+  z-index: 1000;
 }
 
-.link--nav {
+.nav-link {
   display: inline-block;
   padding: 0.5rem 0.2rem;
   margin-right: 2.3rem;
@@ -20,13 +21,14 @@ nav {
   font-size: 1.6rem;
 }
 
-.link--nav:first-child {
+.nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav-link--selected {
   border-bottom: 2px solid #1C2085;
 }
 
-.link--nav:last-child {
-  margin-right: 0;
-}
 
 @media screen and (max-width: 1070px) {
   nav {

@@ -1,5 +1,5 @@
 .top {
-  height: 100rem;
+  min-height: 100rem;
   background-image: url("../assets/background.png");
   background-position: calc(50% - 8rem) calc(50% - 3.5rem);
   background-repeat: no-repeat;
@@ -13,11 +13,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15rem;
+  margin-bottom: 12.4rem;
 }
 
 .call-to-action-left {
-  width: 43rem;
+  width: 56.9rem;
   margin-top: 20rem;
   margin-right: 2rem;
 }
@@ -27,7 +27,7 @@
   font-weight: 700;
   line-height: 5.6rem;
   letter-spacing: 0.02rem;
-  margin-bottom: 5rem;
+  margin-bottom: 7.4rem;
 }
 
 .subscribe-text {
@@ -59,15 +59,16 @@
 @media screen and (max-width: 1070px) { 
   .top {
     background-position: calc(50% - 8rem) calc(50% - 13rem);
+    min-height: 50rem;
   }
 
   .call-to-action {
     flex-direction: column;
-    width: 80%;
+    margin-bottom: 5rem;
   }
 
   .call-to-action-left {
-    margin: 15rem 0 17rem 0;
+    margin: 15rem 0 12rem 0;
     width: 100%;
   }
 
@@ -80,6 +81,7 @@
   }
 
   .video {
+    margin-top: 16.2rem;
     width: 80%;
   }
 
@@ -89,16 +91,29 @@
 }
 
 @media screen and (max-width: 500px) { 
+  .top {
+    background-position: calc(50% - 8rem) calc(50% - 25rem);
+  }
+
   .call-to-action {
     width: 90%;
   }
 
   .call-to-action-left {
-    margin: 10rem 0 6rem 0;
+    margin: 10rem 0 3.9rem 0;
+  }
+
+  .text-main {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
   }
   
   .subscription {
     position: static;
+  }
+
+  .subscribe-text {
+    font-size: 1.4rem
   }
   
   .text-input--subscription {
@@ -112,6 +127,7 @@
   }
 
   .video {
+    margin-top: 7.3rem;
     width: 100%;
   }
 }
