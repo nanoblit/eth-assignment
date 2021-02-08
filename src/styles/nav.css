@@ -30,7 +30,7 @@ nav {
 }
 
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1110px) {
   nav {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -47,7 +47,7 @@ nav {
 
 @media screen and (max-width: 500px) {
   .logo {
-    width: 6rem;
+    width: 5.6rem;
   }
 
   .link--nav {

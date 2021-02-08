@@ -1,0 +1,114 @@
+.contact-us {
+  margin-top: 8.8rem;
+  background-color: #252b42;
+  display: flex;
+  justify-content: center;
+  padding-top: 8.8rem;
+  padding-bottom: 5.5rem;
+}
+
+.contact-wrapper {
+  width: 40.1rem;
+  margin: 0 1.65rem 0
+}
+
+.header--contact {
+  margin-bottom: 2.6rem;
+}
+
+.text--contact {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact-form {
+  background-color: #4250BF;
+  border-radius: 1.30742rem;
+  padding: 8.4rem 4.1rem 2.6rem;
+}
+
+.text-input--form {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.text-input--form:last-child {
+  margin-bottom: 3.7rem;
+}
+
+.text-input--form::placeholder {
+  color: #576677;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 3.5rem;
+  height: 2.4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 3.7rem;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: #eee;
+}
+
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #38a5db;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 0.9rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid white;
+  border-width: 0 0.3rem 0.3rem 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 500px) {
+  .contact-us {
+    margin-top: 4.8rem;
+  }
+
+  .contact-form {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+}

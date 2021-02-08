@@ -1,4 +1,6 @@
 .team {
+  max-width: 1627px;
+  margin: 0 auto;
   width: 80%;
   margin: 0 auto;
 }
@@ -11,12 +13,20 @@
 .team-members {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5.6rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+
+.team-members::-webkit-scrollbar {
+  display: none;
 }
 
 .team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 27rem;
   width: 27rem;
   margin-right: 2.5rem;
 }
@@ -31,12 +41,14 @@
 }
 
 .team-header {
+  text-align: center;
   font-size: 2.4rem;
   color: #38A5DB;
-  margin-bottom: 0.8rem
+  margin-bottom: 0.8rem;
 }
 
 .team-subheader {
+  text-align: center;
   font-size: 1.3rem;
   line-height: 1.8rem;
   color: #011226;
@@ -44,10 +56,8 @@
   margin-bottom: 1.6rem
 }
 
-.team-text {
+.text--team {
   text-align: center;
-  font-size: 1.8rem;
-  line-height: 2.4rem;
   color: #45515F;
   margin-bottom: 3.2rem
 }
@@ -67,8 +77,50 @@
   margin-right: 0;
 }
 
+.team-scroll-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.team-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #C4C4C4;
+  border-radius: 100%;
+  margin-right: 0.8rem;
+}
+
+.team-dot:last-child {
+  margin-right: 0;
+}
+
+.team-dot--active {
+  background-color: #4250BF;
+}
+
 @media screen and (max-width: 500px) { 
   .team {
     width: 90%;
+  }
+
+  .team-member {
+    min-width: 13.6rem;
+    width: 13.6rem;
+  }
+
+  .team-header {
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    margin-bottom: 0;
+  }
+  
+  .team-subheader {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem
+  }
+  
+  .text--team {
+    margin-bottom: 1.4rem
   }
 }

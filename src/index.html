@@ -9,15 +9,15 @@
 </head>
 
 <body>
+  <nav>
+    <img class="logo" src="assets/logo.svg">
+    <div class="nav-right">
+      <a class="nav-link nav-link--selected" href="#">ICO</a>
+      <a class="nav-link" href="#">Team</a>
+      <a class="nav-link" href="#">Contact</a>
+    </div>
+  </nav>
   <main>
-    <nav>
-      <img class="logo" src="assets/logo.svg">
-      <div class="nav-right">
-        <a class="nav-link nav-link--selected" href="#">ICO</a>
-        <a class="nav-link" href="#">Team</a>
-        <a class="nav-link" href="#">Contact</a>
-      </div>
-    </nav>
     <div class="social">
       <img class="social-link social-link--twitter" src="assets/twitter.svg">
       <img class="social-link social-link--facebook" src="assets/facebook.svg">
@@ -29,7 +29,7 @@
             <h1 class="text-main">The first fully-automatic social crypto trading platform with real crypto
               currency</h1>
           </header>
-          <p class="subscribe-text">Subscribe and get the lastes information</p>
+          <p class="text text-subscribe">Subscribe and get the lastes information</p>
           <div class="subscription">
             <input class="text-input text-input--subscription" type="email" placeholder="Enter your email">
             <button class="button button--subscribe">Subscribe</button>
@@ -47,7 +47,8 @@
           <img class="team-img" src="./assets/team1.png">
           <h1 class="team-header">Edgar Morrison</h1>
           <h2 class="team-subheader">CEO</h2>
-          <p class="team-text">Having used discount toner cartridges for twenty years, there have been a lot of changes
+          <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
+            changes
             in the toner...
           </p>
           <div class="team-links">
@@ -55,45 +56,96 @@
             <div class="team-link"><img src="assets/linkedin.png"></div>
           </div>
         </div>
-          <div class="team-member">
-            <img class="team-img" src="./assets/team2.png">
-            <h1 class="team-header">Mae Martin</h1>
-            <h2 class="team-subheader">CTO</h2>
-            <p class="team-text">Having used discount toner cartridges for twenty years, there have been a lot of changes
-              in the toner...
-            </p>
-            <div class="team-links">
-              <div class="team-link"><img src="assets/facebook.png"></div>
-              <div class="team-link"><img src="assets/linkedin.png"></div>
-            </div>
+        <div class="team-member">
+          <img class="team-img" src="./assets/team2.png">
+          <h1 class="team-header">Mae Martin</h1>
+          <h2 class="team-subheader">CTO</h2>
+          <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
+            changes
+            in the toner...
+          </p>
+          <div class="team-links">
+            <div class="team-link"><img src="assets/facebook.png"></div>
+            <div class="team-link"><img src="assets/linkedin.png"></div>
           </div>
-            <div class="team-member">
-              <img class="team-img" src="./assets/team3.png">
-              <h1 class="team-header">David Banks</h1>
-              <h2 class="team-subheader">CFO</h2>
-              <p class="team-text">Having used discount toner cartridges for twenty years, there have been a lot of changes
-                in the toner...
-              </p>
-              <div class="team-links">
-                <div class="team-link"><img src="assets/facebook.png"></div>
-                <div class="team-link"><img src="assets/linkedin.png"></div>
-              </div>
-            </div>
-              <div class="team-member">
-                <img class="team-img" src="./assets/team4.png">
-                <h1 class="team-header">Frederick Parsons</h1>
-                <h2 class="team-subheader">COO</h2>
-                <p class="team-text">Having used discount toner cartridges for twenty years, there have been a lot of changes
-                  in the toner...
-                </p>
-                <div class="team-links">
-                  <div class="team-link"><img src="assets/facebook.png"></div>
-                  <div class="team-link"><img src="assets/linkedin.png"></div>
-                </div>
-              </div>
+        </div>
+        <div class="team-member">
+          <img class="team-img" src="./assets/team3.png">
+          <h1 class="team-header">David Banks</h1>
+          <h2 class="team-subheader">CFO</h2>
+          <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
+            changes
+            in the toner...
+          </p>
+          <div class="team-links">
+            <div class="team-link"><img src="assets/facebook.png"></div>
+            <div class="team-link"><img src="assets/linkedin.png"></div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="team-img" src="./assets/team4.png">
+          <h1 class="team-header">Frederick Parsons</h1>
+          <h2 class="team-subheader">COO</h2>
+          <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
+            changes
+            in the toner...
+          </p>
+          <div class="team-links">
+            <div class="team-link"><img src="assets/facebook.png"></div>
+            <div class="team-link"><img src="assets/linkedin.png"></div>
+          </div>
+        </div>
+      </div>
+      <div class="team-scroll-dots">
+        <div class="team-dot"></div>
+        <div class="team-dot"></div>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="contact-wrapper">
+        <h1 class="header header--contact">CONTACT US</h1>
+        <p class="text text--contact">Most calendars are designed for teams.
+          Slate is designed for freelancers</p>
+        <form class="contact-form">
+          <input class="text-input text-input--form" type="text" placeholder="Your Name">
+          <input class="text-input text-input--form" type="email" placeholder="Your Email">
+          <label class="checkbox">Checkbox
+            <input class="checkbox-input" id="contact-checkbox" type="checkbox"></input>
+            <span class="checkmark"></span>
+          </label>
+          <input class="button" type="submit" value="Send">
+        </form>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-top">
+        <img class="footer-logo" src="assets/logo.svg">
+        <div class="footer-contact">
+          <p class="text footer-text">Contact us:</p>
+          <a class="mail-link" href="mailto: have@nicecoding.io">have@nicecoding.io</a>
+        </div>
+        <button class="button button--whitepaper">Read Whitepaper</button>
+      </div>
+      <div class="footer-links">
+        <span class="footer-link">© Copywriters 2020</span>
+        <a class="footer-link" href="#">FAQ</a>
+        <a class="footer-link" href="#">Terms of Use</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-links-mobile">
+      <div class="footer-links-mobile-row">
+        <span class="footer-link">© Copywriters 2020</span>
+        <a class="footer-link" href="#">FAQ</a>
+      </div>
+      <div class="footer-links-mobile-row">
+        <a class="footer-link" href="#">Terms of Use</a>
+        <a class="footer-link" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
