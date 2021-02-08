@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .top {
     background-position: calc(50% - 8rem) calc(50% - 25rem);
   }

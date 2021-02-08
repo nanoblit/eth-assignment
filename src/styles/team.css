@@ -98,11 +98,13 @@
   background-color: #4250BF;
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 1110px) { 
   .team {
-    width: 90%;
+    width: 100%;
   }
+}
 
+@media screen and (max-width: 600px) { 
   .team-member {
     min-width: 13.6rem;
     width: 13.6rem;

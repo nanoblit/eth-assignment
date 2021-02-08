@@ -102,7 +102,7 @@
   transform: rotate(45deg);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .contact-us {
     margin-top: 4.8rem;
   }
