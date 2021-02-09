@@ -27,7 +27,7 @@ function setupDots(scrollable, dotsContainer) {
   function updateDotsVisibility() {
     console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
     console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
-    if (scrollable.scrollWidth <= scrollable.clientWidth) {
+    if (scrollable.scrollWidth < scrollable.clientWidth) {
       dotsContainer.style.display = "none";
     } else {
       dotsContainer.style.display = "flex";
@@ -41,7 +41,7 @@ function setupDots(scrollable, dotsContainer) {
 
     console.log(`scrollMiddlePosition: ${scrollMiddlePosition}`);
     console.log(`clientMiddlePosition: ${clientMiddlePosition}`);
-    if (scrollMiddlePosition < clientMiddlePosition) {
+    if (scrollMiddlePosition <= clientMiddlePosition) {
       dots[0].classList.add("team-dot--active");
       dots[1].classList.remove("team-dot--active");
     } else {
