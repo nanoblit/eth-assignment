@@ -36,11 +36,11 @@ function setupDots(scrollable, dotsContainer) {
     const clientMiddlePosition = scrollable.scrollWidth / 2;
 
     if (scrollMiddlePosition < clientMiddlePosition) {
-      dots[1].classList.add("team-dot--active");
-      dots[0].classList.remove("team-dot--active");
-    } else {
-      dots[1].classList.remove("team-dot--active");
       dots[0].classList.add("team-dot--active");
+      dots[1].classList.remove("team-dot--active");
+    } else {
+      dots[0].classList.remove("team-dot--active");
+      dots[1].classList.add("team-dot--active");
     }
   }
 
