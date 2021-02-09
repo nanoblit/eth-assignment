@@ -9,12 +9,12 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="main-nav">
     <img class="logo" src="assets/logo.svg">
     <div class="nav-right">
-      <a class="nav-link nav-link--selected" href="#">ICO</a>
-      <a class="nav-link" href="#">Team</a>
-      <a class="nav-link" href="#">Contact</a>
+      <a id="ico-nav" class="nav-link" href="#anchor--top">ICO</a>
+      <a id="team-nav" class="nav-link" href="#anchor--team">Team</a>
+      <a id="contact-nav" class="nav-link" href="#anchor--contact-us">Contact</a>
     </div>
   </nav>
   <main>
@@ -22,7 +22,8 @@
       <img class="social-link social-link--twitter" src="assets/twitter.svg">
       <img class="social-link social-link--facebook" src="assets/facebook.svg">
     </div>
-    <section class="top">
+    <section id="top" class="top">
+      <span id="anchor--top" class="anchor"></span>
       <div class="call-to-action">
         <div class="call-to-action-left">
           <header>
@@ -35,18 +36,19 @@
             <button class="button button--subscribe">Subscribe</button>
           </div>
         </div>
-        <img class="arrow arrow--small-screen" src="./assets/down arrow.png">
-        <img class="video" src="./assets/video.png">
+        <a class="arrow arrow--small-screen" href="#anchor--team"><img src="./assets/down arrow.png"></a>
+        <img class="video" src="./assets/video.png" data-micromodal-trigger="modal-video">
       </div>
-      <img class="arrow arrow--large-screen" src="./assets/down arrow.png">
+      <a class="arrow arrow--large-screen" href="#anchor--team"><img src="./assets/down arrow.png"></a>
     </section>
-    <section class="team">
+    <section id="team" class="team">
+      <span id="anchor--team" class="anchor"></span>
       <h1 class="header header--team">TEAM</h1>
       <div class="team-members">
         <div class="team-member">
           <img class="team-img" src="./assets/team1.png">
-          <h1 class="team-header">Edgar Morrison</h1>
-          <h2 class="team-subheader">CEO</h2>
+          <button data-micromodal-trigger="modal-edgar" class="team-header">Edgar Morrison</button>
+          <p class="team-subheader">CEO</p>
           <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
             changes
             in the toner...
@@ -58,8 +60,8 @@
         </div>
         <div class="team-member">
           <img class="team-img" src="./assets/team2.png">
-          <h1 class="team-header">Mae Martin</h1>
-          <h2 class="team-subheader">CTO</h2>
+          <button data-micromodal-trigger="modal-mae" class="team-header">Mae Martin</button>
+          <p class="team-subheader">CTO</p>
           <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
             changes
             in the toner...
@@ -71,8 +73,8 @@
         </div>
         <div class="team-member">
           <img class="team-img" src="./assets/team3.png">
-          <h1 class="team-header">David Banks</h1>
-          <h2 class="team-subheader">CFO</h2>
+          <button data-micromodal-trigger="modal-david" class="team-header">David Banks</button>
+          <p class="team-subheader">CFO</p>
           <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
             changes
             in the toner...
@@ -84,8 +86,8 @@
         </div>
         <div class="team-member">
           <img class="team-img" src="./assets/team4.png">
-          <h1 class="team-header">Frederick Parsons</h1>
-          <h2 class="team-subheader">COO</h2>
+          <button data-micromodal-trigger="modal-frederick" class="team-header">Frederick Parsons</button>
+          <p class="team-subheader">COO</p>
           <p class="text text--team">Having used discount toner cartridges for twenty years, there have been a lot of
             changes
             in the toner...
@@ -101,7 +103,8 @@
         <div class="team-dot"></div>
       </div>
     </section>
-    <section class="contact-us">
+    <section id=contact-us class="contact-us">
+      <span id="anchor--contact-us" class="anchor"></span>
       <div class="contact-wrapper">
         <h1 class="header header--contact">CONTACT US</h1>
         <p class="text text--contact">Most calendars are designed for teams.
@@ -146,6 +149,164 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal micromodal-slide" id="modal-edgar" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <nav class="modal-nav">
+          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window"><img
+              data-micromodal-close src="assets/close-modal.png"></button>
+        </nav>
+        <header class="modal-header-group">
+          <h1 class="header header--modal" id="modal-1-title">
+            Edgar Morrison
+          </h1>
+          <h2 class="header header--modal-subheader">
+            CEO
+          </h2>
+        </header>
+        <main class="modal-content">
+          <p class="text text--modal">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
+            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+            amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide" id="modal-mae" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <nav class="modal-nav">
+          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window"><img
+              data-micromodal-close src="assets/close-modal.png"></button>
+        </nav>
+        <header class="modal-header-group">
+          <h1 class="header header--modal" id="modal-1-title">
+            Mae Martin
+          </h1>
+          <h2 class="header header--modal-subheader">
+            CTO
+          </h2>
+        </header>
+        <main class="modal-content">
+          <p class="text text--modal">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
+            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+            amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide" id="modal-david" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <nav class="modal-nav">
+          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window"><img
+              data-micromodal-close src="assets/close-modal.png"></button>
+        </nav>
+        <header class="modal-header-group">
+          <h1 class="header header--modal" id="modal-1-title">
+            David Banks
+          </h1>
+          <h2 class="header header--modal-subheader">
+            CFO
+          </h2>
+        </header>
+        <main class="modal-content">
+          <p class="text text--modal">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
+            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+            amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide" id="modal-frederick" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <nav class="modal-nav">
+          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window"><img
+              data-micromodal-close src="assets/close-modal.png"></button>
+        </nav>
+        <header class="modal-header-group">
+          <h1 class="header header--modal" id="modal-1-title">
+            Frederick Parsons
+          </h1>
+          <h2 class="header header--modal-subheader">
+            COO
+          </h2>
+        </header>
+        <main class="modal-content">
+          <p class="text text--modal">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est
+            sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat
+            sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non
+            deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+            amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <div class="micromodal-slide" id="modal-video" aria-hidden="true">
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <nav class="modal-nav">
+          <button class="modal-btn" data-micromodal-close aria-label="Close this dialog window"><img
+              data-micromodal-close src="assets/close-modal.png"></button>
+        </nav>
+        <main class="modal-content">
+          <img class="video-modal" src="./assets/video.png">
+        </main>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

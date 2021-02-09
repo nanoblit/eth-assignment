@@ -4,6 +4,7 @@
   right: 10rem;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 
 .social-link {

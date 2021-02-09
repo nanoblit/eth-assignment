@@ -33,6 +33,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "merge": "^2.1.0"
+    "merge": "^2.1.0",
+    "micromodal": "^0.4.6"
   }
 }

@@ -45,6 +45,9 @@
   font-size: 2.4rem;
   color: #38A5DB;
   margin-bottom: 0.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .team-subheader {
