@@ -23,7 +23,8 @@ setupNav();
 
 function setupDots(scrollable, dotsContainer) {
   const dots = [...dotsContainer.querySelectorAll(".team-dot")];
-
+  console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
+  console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
   function updateDotsVisibility() {
     if (scrollable.scrollWidth <= scrollable.clientWidth) {
       dotsContainer.style.display = "none";
