@@ -36,11 +36,11 @@
     padding-right: 2rem;
   }
 
-  .link--nav {
+  .nav-link {
     margin-right: 3rem;
   }
 
-  .link--nav:last-child {
+  .nav-link:last-child {
     margin-right: 0;
   }
 }
@@ -50,11 +50,13 @@
     width: 5.6rem;
   }
 
-  .link--nav {
+  .nav-link {
     margin-right: 1rem;
   }
 
-  .link--nav:last-child {
+  .nav-link:last-child {
     margin-right: 0;
   }
 }
+
+  
