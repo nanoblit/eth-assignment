@@ -46,6 +46,13 @@ function setupDots(scrollable, dotsContainer) {
 
   updateDotsVisibility();
   updateDotsColor();
+  
+  dots[0].addEventListener("click", () => {
+    scrollable.scrollLeft = 0;
+  });
+  dots[1].addEventListener("click", () => {
+    scrollable.scrollLeft = scrollable.scrollWidth;
+  });
 
   window.addEventListener("resize", updateDotsVisibility);
   scrollable.addEventListener("scroll", updateDotsColor);

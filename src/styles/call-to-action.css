@@ -57,9 +57,17 @@
   display: none;
 }
 
-.video {
+.video-button {
+  display: flex;
   margin-top: 10rem;
   cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.video {
+  width: 100%;
 }
 
 @media screen and (max-width: 1110px) {
@@ -86,7 +94,7 @@
     display: block;
   }
 
-  .video {
+  .video-button {
     margin-top: 16.2rem;
     width: 80%;
   }
@@ -129,7 +137,7 @@
     width: 100%;
   }
 
-  .video {
+  .video-button {
     margin-top: 7.3rem;
     width: 100%;
   }

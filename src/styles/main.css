@@ -8,12 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  :root {
-    font-size: 125%;
-  }
-} */
-
 main {
   margin: 0 auto;
 }
