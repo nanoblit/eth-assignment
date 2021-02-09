@@ -12,12 +12,13 @@ import "./styles/modal.css";
 
 MicroModal.init({ awaitCloseAnimation: true });
 
-setupNav();
-
-setupDots(
-  document.querySelector(".team-members"),
-  document.querySelector(".team-scroll-dots")
-);
+window.onload = function() {
+  setupDots(
+    document.querySelector(".team-members"),
+    document.querySelector(".team-scroll-dots")
+  );
+  setupNav();
+} 
 
 function setupDots(scrollable, dotsContainer) {
   const dots = [...dotsContainer.querySelectorAll(".team-dot")];
@@ -54,8 +55,10 @@ function setupDots(scrollable, dotsContainer) {
     scrollable.scrollLeft = scrollable.scrollWidth;
   });
 
+  window.addEventListener("resize", updateDotsColor);
   window.addEventListener("resize", updateDotsVisibility);
   scrollable.addEventListener("scroll", updateDotsColor);
+  scrollable.addEventListener("scroll", updateDotsVisibility);
 }
 
 function setupNav() {
