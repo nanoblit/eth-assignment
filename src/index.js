@@ -25,8 +25,6 @@ function setupDots(scrollable, dotsContainer) {
   const dots = [...dotsContainer.querySelectorAll(".team-dot")];
 
   function updateDotsVisibility() {
-    console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
-    console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
     if (scrollable.scrollWidth < scrollable.clientWidth) {
       dotsContainer.style.display = "none";
     } else {
@@ -39,8 +37,6 @@ function setupDots(scrollable, dotsContainer) {
       scrollable.scrollLeft + scrollable.clientWidth / 2;
     const clientMiddlePosition = scrollable.scrollWidth / 2; 
 
-    console.log(`scrollMiddlePosition: ${scrollMiddlePosition}`);
-    console.log(`clientMiddlePosition: ${clientMiddlePosition}`);
     if (scrollMiddlePosition <= clientMiddlePosition) {
       dots[0].classList.add("team-dot--active");
       dots[1].classList.remove("team-dot--active");
