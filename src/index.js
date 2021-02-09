@@ -23,7 +23,7 @@ function setupDots(scrollable, dotsContainer) {
   function updateDotsVisibility() {
     console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
     console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
-    if (scrollable.scrollWidth === scrollable.clientWidth) {
+    if (scrollable.scrollWidth - 1 <= scrollable.clientWidth) {
       dotsContainer.style.display = "none";
     } else {
       dotsContainer.style.display = "flex";
