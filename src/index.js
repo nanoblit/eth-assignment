@@ -37,7 +37,7 @@ function setupDots(scrollable, dotsContainer) {
   function updateDotsColor() {
     const scrollMiddlePosition =
       scrollable.scrollLeft + scrollable.clientWidth / 2;
-    const clientMiddlePosition = scrollable.scrollWidth / 2;
+    const clientMiddlePosition = scrollable.scrollWidth / 2; 
 
     console.log(`scrollMiddlePosition: ${scrollMiddlePosition}`);
     console.log(`clientMiddlePosition: ${clientMiddlePosition}`);
