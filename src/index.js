@@ -12,20 +12,17 @@ import "./styles/modal.css";
 
 MicroModal.init({ awaitCloseAnimation: true });
 
-setTimeout(
-  setupDots(
-    document.querySelector(".team-members"),
-    document.querySelector(".team-scroll-dots")
-  ),
-  1000
+setupDots(
+  document.querySelector(".team-members"),
+  document.querySelector(".team-scroll-dots")
 );
 setupNav();
 
 function setupDots(scrollable, dotsContainer) {
   const dots = [...dotsContainer.querySelectorAll(".team-dot")];
-  console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
-  console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
   function updateDotsVisibility() {
+    console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
+    console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
     if (scrollable.scrollWidth <= scrollable.clientWidth) {
       dotsContainer.style.display = "none";
     } else {
