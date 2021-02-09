@@ -12,20 +12,21 @@ import "./styles/modal.css";
 
 MicroModal.init({ awaitCloseAnimation: true });
 
-window.onload = function() {
+setTimeout(
   setupDots(
     document.querySelector(".team-members"),
     document.querySelector(".team-scroll-dots")
-  );
-  setupNav();
-} 
+  ),
+  1000
+);
+setupNav();
 
 function setupDots(scrollable, dotsContainer) {
   const dots = [...dotsContainer.querySelectorAll(".team-dot")];
 
   function updateDotsVisibility() {
-    console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`)
-    console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`)
+    console.log(`scrollable.scrollWidth: ${scrollable.scrollWidth}`);
+    console.log(`scrollable.clientWidth: ${scrollable.clientWidth}`);
     if (scrollable.scrollWidth <= scrollable.clientWidth) {
       dotsContainer.style.display = "none";
     } else {
@@ -38,8 +39,8 @@ function setupDots(scrollable, dotsContainer) {
       scrollable.scrollLeft + scrollable.clientWidth / 2;
     const clientMiddlePosition = scrollable.scrollWidth / 2;
 
-    console.log(`scrollMiddlePosition: ${scrollMiddlePosition}`)
-    console.log(`clientMiddlePosition: ${clientMiddlePosition}`)
+    console.log(`scrollMiddlePosition: ${scrollMiddlePosition}`);
+    console.log(`clientMiddlePosition: ${clientMiddlePosition}`);
     if (scrollMiddlePosition < clientMiddlePosition) {
       dots[0].classList.add("team-dot--active");
       dots[1].classList.remove("team-dot--active");
@@ -51,7 +52,7 @@ function setupDots(scrollable, dotsContainer) {
 
   updateDotsVisibility();
   updateDotsColor();
-  
+
   dots[0].addEventListener("click", () => {
     scrollable.scrollLeft = 0;
   });
