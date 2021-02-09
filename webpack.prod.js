@@ -18,7 +18,7 @@ module.exports = merge(common, {
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
-          removeComments: false,
+          removeComments: true,
         },
       }),
     ],
